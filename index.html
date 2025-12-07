@@ -1,0 +1,542 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dua Pilar Investasi - Fondasi Ganda untuk Pertumbuhan Aset Anda</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body class="bg-gray-50">
+    <!-- Navigation -->
+    <nav class="fixed w-full bg-white shadow-lg z-50">
+        <div class="container mx-auto px-6 py-4">
+            <div class="flex justify-between items-center">
+                <div class="flex items-center space-x-2">
+                    <div class="w-10 h-10 bg-blue-600 rounded-lg flex items-center justify-center">
+                        <i class="fas fa-chart-line text-white text-xl"></i>
+                    </div>
+                    <span class="text-xl font-bold text-gray-800">Dua Pilar Investasi</span>
+                </div>
+                <div class="hidden md:flex space-x-8">
+                    <a href="#beranda" class="text-gray-700 hover:text-blue-600 transition">Beranda</a>
+                    <a href="#pilar" class="text-gray-700 hover:text-blue-600 transition">Dua Pilar</a>
+                    <a href="#model" class="text-gray-700 hover:text-blue-600 transition">Model Bisnis</a>
+                    <a href="#layanan" class="text-gray-700 hover:text-blue-600 transition">Layanan</a>
+                    <a href="#tentang" class="text-gray-700 hover:text-blue-600 transition">Tentang</a>
+                    <a href="#kontak" class="text-gray-700 hover:text-blue-600 transition">Kontak</a>
+                </div>
+                <button class="md:hidden" onclick="toggleMobileMenu()">
+                    <i class="fas fa-bars text-2xl text-gray-700"></i>
+                </button>
+            </div>
+        </div>
+        <!-- Mobile Menu -->
+        <div id="mobileMenu" class="hidden md:hidden bg-white border-t">
+            <div class="px-6 py-4 space-y-3">
+                <a href="#beranda" class="block text-gray-700 hover:text-blue-600">Beranda</a>
+                <a href="#pilar" class="block text-gray-700 hover:text-blue-600">Dua Pilar</a>
+                <a href="#model" class="block text-gray-700 hover:text-blue-600">Model Bisnis</a>
+                <a href="#layanan" class="block text-gray-700 hover:text-blue-600">Layanan</a>
+                <a href="#tentang" class="block text-gray-700 hover:text-blue-600">Tentang</a>
+                <a href="#kontak" class="block text-gray-700 hover:text-blue-600">Kontak</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="beranda" class="gradient-bg text-white pt-24 pb-20">
+        <div class="container mx-auto px-6">
+            <div class="flex flex-col md:flex-row items-center">
+                <div class="md:w-1/2 mb-10 md:mb-0">
+                    <h1 class="text-4xl md:text-5xl font-bold mb-6 scroll-reveal">
+                        Dua Pilar Investasi
+                    </h1>
+                    <p class="text-2xl font-light mb-4 scroll-reveal" style="animation-delay: 0.1s">
+                        Fondasi Ganda untuk Pertumbuhan Aset Anda
+                    </p>
+                    <p class="text-xl mb-8 scroll-reveal" style="animation-delay: 0.2s">
+                        Solusi investasi lengkap dengan dua pilar utama: Saham dan Crypto. 
+                        Wujudkan kebebasan finansial Anda bersama kami.
+                    </p>
+                    <div class="flex flex-col sm:flex-row gap-4 scroll-reveal" style="animation-delay: 0.4s">
+                        <button onclick="scrollToSection('pilar')" class="bg-white text-blue-600 px-8 py-3 rounded-lg font-semibold hover:bg-gray-100 transition">
+                            Jelajahi Dua Pilar
+                        </button>
+                        <button onclick="scrollToSection('model')" class="border-2 border-white text-white px-8 py-3 rounded-lg font-semibold hover:bg-white hover:text-blue-600 transition">
+                            Lihat Model Bisnis
+                        </button>
+                    </div>
+                </div>
+                <div class="md:w-1/2 flex justify-center">
+                    <div class="relative floating">
+                        <div class="w-80 h-80 bg-white/10 rounded-full flex items-center justify-center">
+                            <div class="text-center">
+                                <i class="fas fa-columns text-8xl mb-4"></i>
+                                <p class="text-2xl font-semibold">Dua Pilar Kuat</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Stats Section -->
+    <section class="py-16 bg-white">
+        <div class="container mx-auto px-6">
+            <div class="grid grid-cols-1 md:grid-cols-4 gap-8 text-center">
+                <div class="scroll-reveal">
+                    <div class="text-4xl font-bold text-blue-600 counter" data-target="1500">0</div>
+                    <p class="text-gray-600 mt-2">Klien Aktif</p>
+                </div>
+                <div class="scroll-reveal" style="animation-delay: 0.1s">
+                    <div class="text-4xl font-bold text-green-600 counter" data-target="97">0</div>
+                    <p class="text-gray-600 mt-2">Tingkat Kepuasan %</p>
+                </div>
+                <div class="scroll-reveal" style="animation-delay: 0.2s">
+                    <div class="text-4xl font-bold text-purple-600 counter" data-target="75">0</div>
+                    <p class="text-gray-600 mt-2">Miliar Dikelola</p>
+                </div>
+                <div class="scroll-reveal" style="animation-delay: 0.3s">
+                    <div class="text-4xl font-bold text-orange-600 counter" data-target="7">0</div>
+                    <p class="text-gray-600 mt-2">Tahun Pengalaman</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Two Pillars Section -->
+    <section id="pilar" class="py-20 bg-gray-50">
+        <div class="container mx-auto px-6">
+            <div class="text-center mb-16 scroll-reveal">
+                <h2 class="text-4xl font-bold text-gray-800 mb-4">Dua Pilar Utama Kami</h2>
+                <p class="text-xl text-gray-600">Fokus investasi strategis untuk hasil maksimal</p>
+            </div>
+            
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-8 max-w-4xl mx-auto">
+                <!-- Pilar 1: Saham -->
+                <div class="pillar-card bg-white rounded-xl shadow-lg p-8 card-hover scroll-reveal">
+                    <div class="w-20 h-20 bg-blue-100 rounded-full flex items-center justify-center mb-6">
+                        <i class="fas fa-chart-line text-blue-600 text-3xl"></i>
+                    </div>
+                    <h3 class="text-2xl font-bold text-gray-800 mb-4">Investasi Saham</h3>
+                    <p class="text-gray-600 mb-6">
+                        Analisis mendalam dan strategi investasi saham yang terbukti. 
+                        Diversifikasi portofolio Anda dengan saham-saham unggulan.
+                    </p>
+                    <ul class="space-y-3 mb-6">
+                        <li class="flex items-center text-gray-600">
+                            <i class="fas fa-check-circle text-green-500 mr-3"></i>
+                            Analisis fundamental & teknikal
+                        </li>
+                        <li class="flex items-center text-gray-600">
+                            <i class="fas fa-check-circle text-green-500 mr-3"></i>
+                            Portfolio management
+                        </li>
+                        <li class="flex items-center text-gray-600">
+                            <i class="fas fa-check-circle text-green-500 mr-3"></i>
+                            Rekomendasi saham berkualitas
+                        </li>
+                    </ul>
+                    <button class="w-full bg-blue-600 text-white py-3 rounded-lg hover:bg-blue-700 transition">
+                        Pelajari Lebih Lanjut
+                    </button>
+                </div>
+
+                <!-- Pilar 2: Crypto -->
+                <div class="pillar-card bg-white rounded-xl shadow-lg p-8 card-hover scroll-reveal" style="animation-delay: 0.2s">
+                    <div class="w-20 h-20 bg-purple-100 rounded-full flex items-center justify-center mb-6">
+                        <i class="fab fa-bitcoin text-purple-600 text-3xl"></i>
+                    </div>
+                    <h3 class="text-2xl font-bold text-gray-800 mb-4">Investasi Crypto</h3>
+                    <p class="text-gray-600 mb-6">
+                        Manfaatkan peluang di pasar cryptocurrency yang dinamis. 
+                        Strategi investasi crypto yang aman dan menguntungkan.
+                    </p>
+                    <ul class="space-y-3 mb-6">
+                        <li class="flex items-center text-gray-600">
+                            <i class="fas fa-check-circle text-green-500 mr-3"></i>
+                            Trading & hodling strategy
+                        </li>
+                        <li class="flex items-center text-gray-600">
+                            <i class="fas fa-check-circle text-green-500 mr-3"></i>
+                            Security management
+                        </li>
+                        <li class="flex items-center text-gray-600">
+                            <i class="fas fa-check-circle text-green-500 mr-3"></i>
+                            Market analysis 24/7
+                        </li>
+                    </ul>
+                    <button class="w-full bg-purple-600 text-white py-3 rounded-lg hover:bg-purple-700 transition">
+                        Pelajari Lebih Lanjut
+                    </button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Business Model Section -->
+    <section id="model" class="py-20 bg-white">
+        <div class="container mx-auto px-6">
+            <div class="text-center mb-16 scroll-reveal">
+                <h2 class="text-4xl font-bold text-gray-800 mb-4">Model Bisnis Kami</h2>
+                <p class="text-xl text-gray-600">Tiga pendekatan untuk sukses investasi Anda</p>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <!-- Model 1: Buku -->
+                <div class="model-card rounded-xl p-8 card-hover scroll-reveal">
+                    <div class="w-20 h-20 bg-amber-100 rounded-full flex items-center justify-center mb-6 mx-auto">
+                        <i class="fas fa-book text-amber-600 text-3xl"></i>
+                    </div>
+                    <h3 class="text-2xl font-bold text-gray-800 mb-4 text-center">Buku Investasi</h3>
+                    <p class="text-gray-600 mb-6 text-center">
+                        Koleksi buku panduan investasi komprehensif, dari pemula hingga mahir. 
+                        Dapatkan pengetahuan mendalam tentang saham dan crypto.
+                    </p>
+                    <div class="space-y-3 mb-6">
+                        <div class="flex items-center text-gray-600">
+                            <i class="fas fa-star text-amber-500 mr-3"></i>
+                            <span>Bestseller "Saham untuk Pemula"</span>
+                        </div>
+                        <div class="flex items-center text-gray-600">
+                            <i class="fas fa-star text-amber-500 mr-3"></i>
+                            <span>"Crypto Mastery" Series</span>
+                        </div>
+                        <div class="flex items-center text-gray-600">
+                            <i class="fas fa-star text-amber-500 mr-3"></i>
+                            <span>E-book & Format Digital</span>
+                        </div>
+                    </div>
+                    <button class="w-full bg-amber-600 text-white py-3 rounded-lg hover:bg-amber-700 transition">
+                        Lihat Koleksi Buku
+                    </button>
+                </div>
+
+                <!-- Model 2: Les/Pengajaran -->
+                <div class="model-card rounded-xl p-8 card-hover scroll-reveal" style="animation-delay: 0.2s">
+                    <div class="w-20 h-20 bg-green-100 rounded-full flex items-center justify-center mb-6 mx-auto">
+                        <i class="fas fa-chalkboard-teacher text-green-600 text-3xl"></i>
+                    </div>
+                    <h3 class="text-2xl font-bold text-gray-800 mb-4 text-center">Les & Pengajaran</h3>
+                    <p class="text-gray-600 mb-6 text-center">
+                        Program edukasi investasi dengan mentor berpengalaman. 
+                        Kelas online, workshop, dan sesi konsultasi personal.
+                    </p>
+                    <div class="space-y-3 mb-6">
+                        <div class="flex items-center text-gray-600">
+                            <i class="fas fa-star text-green-500 mr-3"></i>
+                            <span>Kelas Online Interaktif</span>
+                        </div>
+                        <div class="flex items-center text-gray-600">
+                            <i class="fas fa-star text-green-500 mr-3"></i>
+                            <span>Workshop Intensif</span>
+                        </div>
+                        <div class="flex items-center text-gray-600">
+                            <i class="fas fa-star text-green-500 mr-3"></i>
+                            <span>Mentorship 1-on-1</span>
+                        </div>
+                    </div>
+                    <button class="w-full bg-green-600 text-white py-3 rounded-lg hover:bg-green-700 transition">
+                        Daftar Kelas Sekarang
+                    </button>
+                </div>
+
+                <!-- Model 3: Berita -->
+                <div class="model-card rounded-xl p-8 card-hover scroll-reveal" style="animation-delay: 0.4s">
+                    <div class="w-20 h-20 bg-red-100 rounded-full flex items-center justify-center mb-6 mx-auto">
+                        <i class="fas fa-newspaper text-red-600 text-3xl"></i>
+                    </div>
+                    <h3 class="text-2xl font-bold text-gray-800 mb-4 text-center">Berita & Analisis</h3>
+                    <p class="text-gray-600 mb-6 text-center">
+                        Update harian pasar saham dan crypto. Analisis mendalam 
+                        dan prediksi dari tim ahli kami.
+                    </p>
+                    <div class="space-y-3 mb-6">
+                        <div class="flex items-center text-gray-600">
+                            <i class="fas fa-star text-red-500 mr-3"></i>
+                            <span>Daily Market Update</span>
+                        </div>
+                        <div class="flex items-center text-gray-600">
+                            <i class="fas fa-star text-red-500 mr-3"></i>
+                            <span>Weekly Analysis Report</span>
+                        </div>
+                        <div class="flex items-center text-gray-600">
+                            <i class="fas fa-star text-red-500 mr-3"></i>
+                            <span>Investment Newsletter</span>
+                        </div>
+                    </div>
+                    <button class="w-full bg-red-600 text-white py-3 rounded-lg hover:bg-red-700 transition">
+                        Berlangganan Berita
+                    </button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section id="layanan" class="py-20 bg-gray-50">
+        <div class="container mx-auto px-6">
+            <div class="text-center mb-16 scroll-reveal">
+                <h2 class="text-4xl font-bold text-gray-800 mb-4">Layanan Lengkap Kami</h2>
+                <p class="text-xl text-gray-600">Solusi investasi terintegrasi untuk masa depan finansial Anda</p>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+                <div class="bg-white rounded-lg p-6 hover:shadow-lg transition scroll-reveal">
+                    <i class="fas fa-graduation-cap text-3xl text-blue-600 mb-4"></i>
+                    <h4 class="text-xl font-semibold mb-3">Edukasi Investasi</h4>
+                    <p class="text-gray-600">Kelas online dan workshop untuk meningkatkan pengetahuan investasi Anda.</p>
+                </div>
+                
+                <div class="bg-white rounded-lg p-6 hover:shadow-lg transition scroll-reveal" style="animation-delay: 0.1s">
+                    <i class="fas fa-user-tie text-3xl text-purple-600 mb-4"></i>
+                    <h4 class="text-xl font-semibold mb-3">Konsultasi Pribadi</h4>
+                    <p class="text-gray-600">Sesi konsultasi one-on-one dengan para ahli investasi kami.</p>
+                </div>
+                
+                <div class="bg-white rounded-lg p-6 hover:shadow-lg transition scroll-reveal" style="animation-delay: 0.2s">
+                    <i class="fas fa-shield-alt text-3xl text-green-600 mb-4"></i>
+                    <h4 class="text-xl font-semibold mb-3">Manajemen Risiko</h4>
+                    <p class="text-gray-600">Strategi perlindungan aset dan minimisasi risiko investasi.</p>
+                </div>
+                
+                <div class="bg-white rounded-lg p-6 hover:shadow-lg transition scroll-reveal" style="animation-delay: 0.3s">
+                    <i class="fas fa-chart-bar text-3xl text-orange-600 mb-4"></i>
+                    <h4 class="text-xl font-semibold mb-3">Analisis Market</h4>
+                    <p class="text-gray-600">Update harian dan analisis mendalam pasar keuangan.</p>
+                </div>
+                
+                <div class="bg-white rounded-lg p-6 hover:shadow-lg transition scroll-reveal" style="animation-delay: 0.4s">
+                    <i class="fas fa-mobile-alt text-3xl text-red-600 mb-4"></i>
+                    <h4 class="text-xl font-semibold mb-3">Platform Trading</h4>
+                    <p class="text-gray-600">Akses ke platform trading canggih dengan fitur lengkap.</p>
+                </div>
+                
+                <div class="bg-white rounded-lg p-6 hover:shadow-lg transition scroll-reveal" style="animation-delay: 0.5s">
+                    <i class="fas fa-headset text-3xl text-indigo-600 mb-4"></i>
+                    <h4 class="text-xl font-semibold mb-3">Support 24/7</h4>
+                    <p class="text-gray-600">Tim support siap membantu Anda kapan saja dibutuhkan.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="tentang" class="py-20 bg-white">
+        <div class="container mx-auto px-6">
+            <div class="flex flex-col md:flex-row items-center gap-12">
+                <div class="md:w-1/2 scroll-reveal">
+                    <h2 class="text-4xl font-bold text-gray-800 mb-6">Mengapa Memilih Dua Pilar Investasi?</h2>
+                    <p class="text-lg text-gray-600 mb-6">
+                        Kami adalah perusahaan jasa investasi terpercaya dengan pengalaman lebih dari 7 tahun 
+                        dalam membantu klien mencapai tujuan finansial mereka. Dengan pendekatan dua pilar, 
+                        kami menyediakan solusi investasi yang fokus dan efektif.
+                    </p>
+                    <div class="space-y-4">
+                        <div class="flex items-start">
+                            <i class="fas fa-check-circle text-green-500 text-xl mr-3 mt-1"></i>
+                            <div>
+                                <h4 class="font-semibold text-gray-800">Tim Profesional</h4>
+                                <p class="text-gray-600">Ahli dengan sertifikasi internasional dan pengalaman decades</p>
+                            </div>
+                        </div>
+                        <div class="flex items-start">
+                            <i class="fas fa-check-circle text-green-500 text-xl mr-3 mt-1"></i>
+                            <div>
+                                <h4 class="font-semibold text-gray-800">Fokus Spesialisasi</h4>
+                                <p class="text-gray-600">Konsentrasi pada saham dan crypto untuk hasil optimal</p>
+                            </div>
+                        </div>
+                        <div class="flex items-start">
+                            <i class="fas fa-check-circle text-green-500 text-xl mr-3 mt-1"></i>
+                            <div>
+                                <h4 class="font-semibold text-gray-800">Transparansi Penuh</h4>
+                                <p class="text-gray-600">Laporan real-time dan komunikasi terbuka dengan klien</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="md:w-1/2 scroll-reveal" style="animation-delay: 0.2s">
+                    <img src="https://picsum.photos/seed/duapilar/600/400" alt="Team" class="rounded-lg shadow-xl">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="py-20 gradient-bg text-white">
+        <div class="container mx-auto px-6 text-center">
+            <h2 class="text-4xl font-bold mb-6 scroll-reveal">Siap Membangun Fondasi Investasi Anda?</h2>
+            <p class="text-xl mb-8 scroll-reveal" style="animation-delay: 0.2s">
+                Bergabunglah dengan ribuan klien yang telah meraih kesuksesan dengan dua pilar kuat kami
+            </p>
+            <div class="flex flex-col sm:flex-row gap-4 justify-center scroll-reveal" style="animation-delay: 0.4s">
+                <button onclick="scrollToSection('kontak')" class="bg-white text-blue-600 px-8 py-4 rounded-lg font-semibold hover:bg-gray-100 transition text-lg">
+                    Mulai Sekarang
+                </button>
+                <button onclick="scrollToSection('model')" class="border-2 border-white text-white px-8 py-4 rounded-lg font-semibold hover:bg-white hover:text-blue-600 transition text-lg">
+                    Pilih Model Anda
+                </button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="kontak" class="py-20 bg-gray-50">
+        <div class="container mx-auto px-6">
+            <div class="text-center mb-16 scroll-reveal">
+                <h2 class="text-4xl font-bold text-gray-800 mb-4">Hubungi Kami</h2>
+                <p class="text-xl text-gray-600">Kami siap membantu Anda meraih kesuksesan investasi</p>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-12">
+                <div class="scroll-reveal">
+                    <form class="bg-white rounded-lg shadow-lg p-8">
+                        <div class="mb-6">
+                            <label class="block text-gray-700 font-semibold mb-2">Nama Lengkap</label>
+                            <input type="text" class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:outline-none focus:border-blue-500" placeholder="John Doe">
+                        </div>
+                        <div class="mb-6">
+                            <label class="block text-gray-700 font-semibold mb-2">Email</label>
+                            <input type="email" class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:outline-none focus:border-blue-500" placeholder="john@example.com">
+                        </div>
+                        <div class="mb-6">
+                            <label class="block text-gray-700 font-semibold mb-2">Nomor Telepon</label>
+                            <input type="tel" class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:outline-none focus:border-blue-500" placeholder="+62 812 3456 7890">
+                        </div>
+                        <div class="mb-6">
+                            <label class="block text-gray-700 font-semibold mb-2">Minat Anda</label>
+                            <select class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:outline-none focus:border-blue-500">
+                                <option>Pilih Layanan</option>
+                                <option>Konsultasi Investasi</option>
+                                <option>Pembelian Buku</option>
+                                <option>Pendaftaran Kelas</option>
+                                <option>Berlangganan Berita</option>
+                            </select>
+                        </div>
+                        <div class="mb-6">
+                            <label class="block text-gray-700 font-semibold mb-2">Pesan</label>
+                            <textarea rows="4" class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:outline-none focus:border-blue-500" placeholder="Ceritakan kebutuhan investasi Anda..."></textarea>
+                        </div>
+                        <button type="submit" class="w-full bg-blue-600 text-white py-3 rounded-lg font-semibold hover:bg-blue-700 transition">
+                            Kirim Pesan
+                        </button>
+                    </form>
+                </div>
+
+                <div class="scroll-reveal" style="animation-delay: 0.2s">
+                    <div class="bg-white rounded-lg shadow-lg p-8 h-full">
+                        <h3 class="text-2xl font-bold text-gray-800 mb-6">Informasi Kontak</h3>
+                        <div class="space-y-6">
+                            <div class="flex items-start">
+                                <i class="fas fa-map-marker-alt text-blue-600 text-xl mr-4 mt-1"></i>
+                                <div>
+                                    <h4 class="font-semibold text-gray-800">Alamat</h4>
+                                    <p class="text-gray-600">Gedung Bursa Efek Indonesia, Tower 2<br>Jl. Jend. Sudirman Kav. 52-53<br>Jakarta Selatan 12190</p>
+                                </div>
+                            </div>
+                            <div class="flex items-start">
+                                <i class="fas fa-phone text-blue-600 text-xl mr-4 mt-1"></i>
+                                <div>
+                                    <h4 class="font-semibold text-gray-800">Telepon</h4>
+                                    <p class="text-gray-600">+62 21 1234 5678<br>+62 812 3456 7890</p>
+                                </div>
+                            </div>
+                            <div class="flex items-start">
+                                <i class="fas fa-envelope text-blue-600 text-xl mr-4 mt-1"></i>
+                                <div>
+                                    <h4 class="font-semibold text-gray-800">Email</h4>
+                                    <p class="text-gray-600">info@duapilarinvestasi.com<br>support@duapilarinvestasi.com</p>
+                                </div>
+                            </div>
+                            <div class="flex items-start">
+                                <i class="fas fa-clock text-blue-600 text-xl mr-4 mt-1"></i>
+                                <div>
+                                    <h4 class="font-semibold text-gray-800">Jam Operasional</h4>
+                                    <p class="text-gray-600">Senin - Jumat: 09:00 - 18:00<br>Sabtu: 09:00 - 15:00</p>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="mt-8">
+                            <h4 class="font-semibold text-gray-800 mb-4">Ikuti Kami</h4>
+                            <div class="flex space-x-4">
+                                <a href="#" class="w-10 h-10 bg-blue-600 text-white rounded-full flex items-center justify-center hover:bg-blue-700 transition">
+                                    <i class="fab fa-facebook-f"></i>
+                                </a>
+                                <a href="#" class="w-10 h-10 bg-blue-400 text-white rounded-full flex items-center justify-center hover:bg-blue-500 transition">
+                                    <i class="fab fa-twitter"></i>
+                                </a>
+                                <a href="#" class="w-10 h-10 bg-pink-600 text-white rounded-full flex items-center justify-center hover:bg-pink-700 transition">
+                                    <i class="fab fa-instagram"></i>
+                                </a>
+                                <a href="#" class="w-10 h-10 bg-blue-800 text-white rounded-full flex items-center justify-center hover:bg-blue-900 transition">
+                                    <i class="fab fa-linkedin-in"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-gray-900 text-white py-12">
+        <div class="container mx-auto px-6">
+            <div class="grid grid-cols-1 md:grid-cols-4 gap-8">
+                <div>
+                    <div class="flex items-center space-x-2 mb-4">
+                        <div class="w-10 h-10 bg-blue-600 rounded-lg flex items-center justify-center">
+                            <i class="fas fa-chart-line text-white text-xl"></i>
+                        </div>
+                        <span class="text-xl font-bold">Dua Pilar Investasi</span>
+                    </div>
+                    <p class="text-gray-400">
+                        Fondasi ganda untuk pertumbuhan aset Anda.
+                    </p>
+                </div>
+                
+                <div>
+                    <h4 class="font-semibold mb-4">Layanan</h4>
+                    <ul class="space-y-2 text-gray-400">
+                        <li><a href="#" class="hover:text-white transition">Investasi Saham</a></li>
+                        <li><a href="#" class="hover:text-white transition">Investasi Crypto</a></li>
+                        <li><a href="#" class="hover:text-white transition">Kelas Investasi</a></li>
+                        <li><a href="#" class="hover:text-white transition">Konsultasi</a></li>
+                    </ul>
+                </div>
+                
+                <div>
+                    <h4 class="font-semibold mb-4">Model Bisnis</h4>
+                    <ul class="space-y-2 text-gray-400">
+                        <li><a href="#" class="hover:text-white transition">Buku Investasi</a></li>
+                        <li><a href="#" class="hover:text-white transition">Les & Pengajaran</a></li>
+                        <li><a href="#" class="hover:text-white transition">Berita & Analisis</a></li>
+                        <li><a href="#" class="hover:text-white transition">Newsletter</a></li>
+                    </ul>
+                </div>
+                
+                <div>
+                    <h4 class="font-semibold mb-4">Newsletter</h4>
+                    <p class="text-gray-400 mb-4">Dapatkan update terbaru tentang investasi</p>
+                    <form class="flex">
+                        <input type="email" placeholder="Email Anda" class="bg-gray-800 text-white px-4 py-2 rounded-l-lg flex-1 focus:outline-none">
+                        <button type="submit" class="bg-blue-600 px-4 py-2 rounded-r-lg hover:bg-blue-700 transition">
+                            <i class="fas fa-paper-plane"></i>
+                        </button>
+                    </form>
+                </div>
+            </div>
+            
+            <div class="border-t border-gray-800 mt-8 pt-8 text-center text-gray-400">
+                <p>&copy; 2024 Dua Pilar Investasi. All rights reserved. | <a href="#" class="hover:text-white">Privacy Policy</a> | <a href="#" class="hover:text-white">Terms of Service</a></p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/script.js"></script>
+</body>
+</html>
